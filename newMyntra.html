@@ -6,6 +6,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <style>
+.dropdown:hover{
+  border-bottom: 3px solid orange;
+ 
+}
+
     .search{
        justify-content: space-between !important;
        padding-right: 10% !important;
@@ -60,7 +65,6 @@
     .footer1 a img {
             width: 30px;
             height: 30px;
-           
         }
     
     #foot{
@@ -103,12 +107,10 @@
         display: flex;
         justify-content: space-between;
     }
-
     #coup{
 animation-name: grow;
 animation-duration: 3s;
 animation-iteration-count: infinite;
-
     }
     @keyframes grow {
             0% {
@@ -127,6 +129,8 @@ animation-iteration-count: infinite;
           width: 70% !important;
         }
         #mslide{
+          width: 100% !important;
+          height: 500px;
 display: flex !important;
 flex-direction: row !important;
 text-align: center !important;
@@ -134,13 +138,29 @@ text-align: center !important;
         }
         .card-img-top {
             width: 100% !important;
-            height: 300px !important; /* Set the height to ensure all images are the same height */
+            height: 70% !important; /* Set the height to ensure all images are the same height */
             object-fit: cover !important; /* Cover the area of the image without stretching */
             object-position: top; 
         }
-#category .card{
-  background-color: blueviolet !important;
-color: white;
+#category .card1{
+  background-color: rgb(255, 255, 255) !important;
+color: rgb(0, 0, 0);
+
+ 
+
+}
+.card1:hover{
+  width: 11rem !important;
+  height: 18rem !important;
+}
+#category{
+  padding: 1rem !important;gap: 1rem !important;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 2rem !important;
+  background-color: rgb(210, 248, 166);
 }
         
 </style>
@@ -150,8 +170,8 @@ color: white;
  
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid" >
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                   <a class="navbar-brand" href="#">
@@ -258,9 +278,9 @@ color: white;
                 </ul>
               </li>
             </ul>
-            <form class="d-flex search" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex search"style="width: 50%;" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for Products, Brands and more"  aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" >Search </button>
             </form>
             
             <div class="last">
@@ -281,7 +301,7 @@ color: white;
         </div>
       </nav>
     
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner slide">
          <div class="carousel-item" data-bs-interval="2000">
             <img src="https://blog.myntra.com/wp-content/uploads/2024/05/EORS-20-banner-1.jpg" class="d-block w-100" alt="...">
@@ -305,16 +325,16 @@ color: white;
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-<div style="padding: 30px;" id="coup">
+<div style="padding: 50px;" id="coup">
     
       <h1 style="font-size: xxxx-large ;color: rgb(40, 100, 153); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; ">COUPONS CORNER</h1>
 </div>
-<img width="100%" src="coup.png" alt="">
+<img width="100%" src="myntraPhotos/coup.png" alt="">
 
 
 
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <h1 style="text-align: center;"> Our Top Brands</h1>
+  <h1 style="text-align: center; padding: 50px; font-size: 50px;" > Our Top Brands</h1>
    <div class="carousel-inner slide">
     <div class="carousel-item" data-bs-interval="2000">
        <img src="myntraPhotos/Untitled design (1).png" class="d-block w-100" alt="...">
@@ -334,18 +354,20 @@ color: white;
    </button>
  </div>
  
+<img src="https://houseofpanchhi.com/cdn/shop/files/Web_Offer_Banner_01_1_1400x.jpg?v=1719917451" alt=""  style="width: 100%; height: 100%; padding-top: 40px; padding-bottom: 20px;">
 
 
+<div style="padding: 30px;" id="coup">
+    
+  <h1 style="font-size: xxxx-large ;color: rgb(40, 100, 153); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; ">Merge With World's LATEST TREND</h1>
+</div>
 
-
-
-
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="padding-bottom: 30px;">
  <h1 style="text-align: center;"></h1>
   <div class="carousel-inner slide">
-   <div class="carousel-item" data-bs-interval="4000">
+   <div class="carousel-item" data-bs-interval="2000">
     <div id="mslide">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%; ">
       <img src="myntraPhotos/m1.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -353,7 +375,7 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div> 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/m6.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -361,7 +383,7 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/m3.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -369,8 +391,16 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div> 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/m4.jpg" class="card-img-top cardsize" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN 40-60% OFF</h5>
+        <p class="card-text">Laid Black Styles</p>
+        <a href="" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20%;">
+      <img src="myntraPhotos/m5.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
         <p class="card-text">Laid Black Styles</p>
@@ -382,7 +412,7 @@ color: white;
   </div>
       <div class="carousel-item active" data-bs-interval="4000">
       <div id="mslide">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/w1.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -390,7 +420,7 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div> 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/w2.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -398,7 +428,7 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/w3.jpg" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
@@ -406,8 +436,16 @@ color: white;
         <a href="" class="btn btn-primary">View More</a>
       </div>
     </div> 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20%;">
       <img src="myntraPhotos/w4.jpg" class="card-img-top cardsize" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN 40-60% OFF</h5>
+        <p class="card-text">Laid Black Styles</p>
+        <a href="" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20%;">
+      <img src="data:image/jpeg;base64,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" class="card-img-top cardsize" alt="...">
       <div class="card-body">
         <h5 class="card-title">MIN 40-60% OFF</h5>
         <p class="card-text">Laid Black Styles</p>
@@ -418,11 +456,11 @@ color: white;
     </div>
    
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -430,41 +468,169 @@ color: white;
 
 
 
-<div style="margin-top: 10px; width: 100%; height: 50px; background-color: bisque;"><h1 style="text-align: center; align-items: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop by Category</h1></div>
-<div id="category" style="display: flex; flex-wrap: wrap;">
-<div  class="card" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+<div style="margin-top: 10px; width: 100%; height: 50px; color: rgb(65, 59, 59); background-color: rgb(252, 252, 252);"><h1 style="text-align: center; align-items: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop by Category</h1></div>
+<div id="category" style="display: flex; flex-wrap: wrap; ">
+  
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://prasamcrafts.com/cdn/shop/files/55-SN30OCT-0626copy_800x.jpg?v=1707220905" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 40%</h5>
+    <p style="text-align: center; " class="card-text">MODERN MUST-HAVES</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://www.bullionknot.com/cdn/shop/files/springlovemin_3.jpg?v=1717053798" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 60% OFF</h5>
+    <p style="text-align: center; " class="card-text">ELEGANT ETHNIC WEAR</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://i.pinimg.com/736x/d0/f0/71/d0f0714d68ea44e699763d5c75d0b6d9.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 70% OFF</h5>
+    <p style="text-align: center; " class="card-text">ETHNIC SHOWSTOPPER</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem; height: 19rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://static3.azafashions.com/tr:w-317/uploads/product_gallery/kishmish-6_2-0727286001636799446.jpg?noopt=true" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 50 OFF</h5>
+    <p style="text-align: center; " class="card-text">FUSION FAVES</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://louisphilippe.abfrl.in/blog/wp-content/uploads/2022/06/Ready-to-Wear-Wedding-outfits-for-Men.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 80%</h5>
+    <p style="text-align: center; " class="card-text">OCCASION READY</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://image.tensorartassets.com/cdn-cgi/image/anim=true,w=320,q=85/posts/images/706765198433762359/53523d56-c9b4-47f6-8fae-8601c1fd042a.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 45%</h5>
+    <p style="text-align: center; " class="card-text">CUTEST COLLECTION</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://images.meesho.com/images/products/376290911/lk2pf_512.webp" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 55%</h5>
+    <p style="text-align: center; " class="card-text">FLATS & HEALS</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://media.vogue.in/wp-content/uploads/2022/08/MG_1229-1.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 60% OFF</h5>
+    <p style="text-align: center; " class="card-text">YARDS OF GRACE</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
   <img style="width: 100%; height: 65% !important;" src="myntraPhotos/w4.jpg" class="card-img-top cardsize" alt="...">
   <div class="card-body">
-    <h6 class="card-title">MIN 40-60% OFF</h5>
-    <a href="" style="color: white; text-decoration: none;"><p style="text-align: center; " class="card-text">Laid Black Styles</p>
-    </a>
+    <h6 class="card-title">MIN 60% OFF</h5>
+    <p style="text-align: center; " class="card-text">FASIONABLE FINDS</p>
+    
   </div>
-</div>
-<div  class="card" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://media.vogue.in/wp-content/uploads/2022/08/MG_1250-1.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 40%</h5>
+    <p style="text-align: center; " class="card-text">ETHNIC SANDLES</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://media.vogue.in/wp-content/uploads/2022/08/01A7870-copy.jpg" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 64% OFF</h5>
+    <p style="text-align: center; " class="card-text">HOTTEST NEW TREND</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
   <img style="width: 100%; height: 65% !important;" src="myntraPhotos/w4.jpg" class="card-img-top cardsize" alt="...">
   <div class="card-body">
-    <h6 class="card-title">MIN 40-60% OFF</h5>
-    <a href="" style="color: white; text-decoration: none;"><p style="text-align: center; " class="card-text">Laid Black Styles</p>
-    </a>
+    <h6 class="card-title">MIN 60% OFF</h5>
+    <p style="text-align: center; " class="card-text">SPOTLIGHT STYLES</p>
+    
   </div>
-</div>
-<div  class="card" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
-  <img style="width: 100%; height: 65% !important;" src="myntraPhotos/w4.jpg" class="card-img-top cardsize" alt="...">
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://imgeng.jagran.com/webstories/45969/trisha-krishnan-approved-gorgeous-sarees-for-wedding-guest-1682513888.jpeg" class="card-img-top cardsize" alt="...">
   <div class="card-body">
-    <h6 class="card-title">MIN 40-60% OFF</h5>
-    <a href="" style="color: white; text-decoration: none;"><p style="text-align: center; " class="card-text">Laid Black Styles</p>
-    </a>
+    <h6 class="card-title">MIN 40% OFF</h5>
+    <p style="text-align: center; " class="card-text">GORGEOUS SAREES</p>
+    
   </div>
-</div>
-<div  class="card" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
-  <img style="width: 100%; height: 65% !important;" src="myntraPhotos/w4.jpg" class="card-img-top cardsize" alt="...">
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://i.pinimg.com/736x/a5/b9/7f/a5b97fa9f891cffc7335842be36ac85d.jpg" class="card-img-top cardsize" alt="...">
   <div class="card-body">
-    <h6 class="card-title">MIN 40-60% OFF</h5>
-    <a href="" style="color: white; text-decoration: none;"><p style="text-align: center; " class="card-text">Laid Black Styles</p>
-    </a>
+    <h6 class="card-title">MIN 65% OFF</h5>
+    <p style="text-align: center; " class="card-text">STYLISH TOPS</p>
+    
   </div>
-</div>
-
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://trybuyusa.com/cdn/shop/articles/2d5cfd7f-f2d1-406a-867a-80afebcc071d.jpg?v=1721305841&width=1000" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 45% OFF</h5>
+    <p style="text-align: center; " class="card-text">EFFORTLESS STYLES</p>
+    
+  </div>
+</div></div></a>
+<a href="" style="color: white; text-decoration: none;">
+  <div style="width: 12rem;">
+  <div  class="card card1" style="margin: 5px; background-color: rgb(52, 183, 139); padding: 5px; width: 10rem; height: 17rem; text-align: center;">
+  <img style="width: 100%; height: 65% !important;" src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/tunics_for_men_a118d58f-e033-4f30-92e4-83831c9ee7cc.jpg?v=1663055347" class="card-img-top cardsize" alt="...">
+  <div class="card-body">
+    <h6 class="card-title">MIN 75% OFF</h5>
+    <p style="text-align: center; " class="card-text">CASUAL PICKS</p>
+    
+  </div>
+</div></div></a>
 </div>
 
 
